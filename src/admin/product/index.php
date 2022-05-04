@@ -6,9 +6,10 @@
 	<title>Document</title>
 </head>
 <body>
+
 	<a href="./add_product.php">Them san pham</a>
 	<?php 
-		$connect = mysqli_connect('localhost','root','','store');
+		require '../connect.php';
 		$sql = "select * from product";
 		$ket_qua = mysqli_query($connect,$sql);
 	?>
@@ -26,10 +27,12 @@
 			<tr>
 				<td><?php echo $product['name'] ?></td>
 				<td><?php echo $product['description'] ?></td>
-				<td><?php echo $product['img'] ?></td>
+				<td>
+					<img height="100" src="img/<?php echo $product['img']?>">
+				</td>
 				<td><?php echo $product['price'] ?></td>
-				<td><a href="">sua</a></td>
-				<td><a href="">xoa</a></td>
+				<td><a href="./update.php?id=<?php echo $product['id']?>">sua</a></td>
+				<td><a href="./delete.php?id=<?php echo $product['id']?>">xoa</a></td>
 
 			</tr>
 		<?php } ?>

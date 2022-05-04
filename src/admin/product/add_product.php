@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form method="post" action="process_add.php">
+    <form method="post" action="process_add.php" enctype='multipart/form-data'>
         Tên
         <input type="text" name="name">
         <br>
@@ -15,7 +15,7 @@
         <textarea name="description"></textarea>
         <br>
         Ảnh
-        <input type="text" name="img">
+        <input type="file" name="img">
         <br>
         Giá
         <input type="text" name="price">
