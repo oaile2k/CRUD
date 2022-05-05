@@ -29,8 +29,8 @@
 				<td><?php echo $product['description'] ?></td>
 				<td><?php echo $product['img'] ?></td>
 				<td><?php echo $product['price'] ?></td>
-				<td><a href="./update.php?id=<?php echo $product['id']?>">sua</a></td>
-				<td><a href="./delete.php?id=<?php echo $product['id']?>">xoa</a></td>
+				<td><a href="./product/update.php?id=<?php echo $product['id']?>">sua</a></td>
+				<td><a href="./product/delete.php?id=<?php echo $product['id']?>">xoa</a></td>
 
 			</tr>
 		<?php } ?>
