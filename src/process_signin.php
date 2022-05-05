@@ -26,7 +26,7 @@ if ($number_rows == 1){
 		$result = mysqli_query($connect,$sql);
 		setcookie('remember', $token, time() + 60*60*24*30);
 	}
-	header('location:./user.php');
+	header('location:./index.php');
 	exit;
 }
 header('location:./signin.php?error=dang nap sai');

@@ -24,4 +24,4 @@ $_SESSION['id'] = $id;
 $_SESSION['name'] = $name;
 mysqli_close($connect);
 
-header('location:user.php');
+header('location:index.php');
